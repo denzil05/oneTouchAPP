@@ -1,5 +1,8 @@
     a:hover{
-    background: #6f695e;
+    background: #e9eaec;
+    }
+    li:hover span:hover{
+    color: black !important;
     }
 
     .active{
@@ -10,3 +13,4 @@
     li.active span{
         color: black !important;
     }
+    

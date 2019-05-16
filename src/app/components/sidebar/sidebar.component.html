@@ -16,39 +16,39 @@
   </div>
   <nav class="sidebar-menu pt-3 pb-3">
     <ul>
-      <li class="active">
-        <a href="#" routerLink="/">
+      <li [ngClass]="{'active': billing}">
+        <a href="#" routerLink="/" (click)="setActive('billing')">
           <i class="fa fa-tv"></i>
           <span>Billing View</span>
           <!--<span class="badge badge-danger rounded-0 ml-auto text-light">New</span>-->
         </a>
       </li>
-      <li>
-        <a href="#" routerLink="/claimview">
+      <li [ngClass]="{'active': claimV}">
+        <a href="#" routerLink="/claimview" (click)="setActive('claimV')">
           <i class="fa fa-diamond"></i>
           <span>Claims View</span>
         </a>
       </li>
-      <li>
-        <a href="#" routerLink="/policy">
+      <li [ngClass]="{'active': policy}">
+        <a href="#" routerLink="/policy" (click)="setActive('policy')">
           <i class="fa fa-table"></i>
           <span>Policy View</span>
         </a>
       </li>
-      <li>
-        <a href="#" routerLink="/claimtype">
+      <li [ngClass]="{'active': claimT}">
+        <a href="#" routerLink="/claimtype" (click)="setActive('claimT')">
           <i class="fa fa-align-center"></i>
           <span>Claim Type</span>
         </a>
       </li>
-      <li>
-        <a href="#" routerLink="/broker">
+      <li [ngClass]="{'active': broker}">
+        <a href="#" routerLink="/broker" (click)="setActive('broker')">
           <i class="fa fa-globe"></i>
           <span>Broker View</span>
         </a>
       </li>
-      <li>
-        <a href="#" routerLink="/productlaunch">
+      <li [ngClass]="{'active': product}">
+        <a href="#" routerLink="/productlaunch" (click)="setActive('product')">
           <i class="fa fa-bell-o"></i>
           <span>Product Launch</span>
         </a>
