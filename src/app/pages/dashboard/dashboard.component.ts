@@ -80,7 +80,7 @@ export class DashboardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
+    // this.sidebar.setActive('billing');
     this.chartLine = new Chart('sales-line',  {
       type: 'line',
       data: this.data ,

@@ -19,6 +19,7 @@ import { PolicyViewComponent } from './pages/policy-view/policy-view.component';
 import { ClaimTypeComponent } from './pages/claim-type/claim-type.component';
 import { BrokerViewComponent } from './pages/broker-view/broker-view.component';
 import { ProductLaunchComponent } from './pages/product-launch/product-launch.component';
+import { ChartModule } from 'primeng/chart';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ProductLaunchComponent } from './pages/product-launch/product-launch.co
     ProductLaunchComponent
   ],
   imports: [
+    ChartModule,
     BrowserModule,
     AppRoutingModule,
     CommonModule,
@@ -41,7 +43,7 @@ import { ProductLaunchComponent } from './pages/product-launch/product-launch.co
     CollapseModule.forRoot(),
     ToastrModule.forRoot()
     ],
-  providers: [],
+  providers: [SidebarComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
