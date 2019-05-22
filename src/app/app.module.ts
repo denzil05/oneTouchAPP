@@ -20,6 +20,8 @@ import { ClaimTypeComponent } from './pages/claim-type/claim-type.component';
 import { BrokerViewComponent } from './pages/broker-view/broker-view.component';
 import { ProductLaunchComponent } from './pages/product-launch/product-launch.component';
 import { ChartModule } from 'primeng/chart';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { ChartModule } from 'primeng/chart';
     CommonModule,
     BrowserAnimationsModule,
     CollapseModule.forRoot(),
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
     ],
   providers: [SidebarComponent],
   bootstrap: [AppComponent]
